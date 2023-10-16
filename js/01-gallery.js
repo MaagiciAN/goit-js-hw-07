@@ -43,3 +43,9 @@ function onClick(event) {
          })
     instance.show()
 }
+function onEscClose(event) { 
+    console.log(event.code);
+    if (event.code === "Escape") {
+        instance.close(); 
+    } 
+}
